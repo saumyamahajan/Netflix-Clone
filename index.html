@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="This is Netflix's Clone!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis. com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" 
+                    alt="Netflix Brand Logo" class="brand-logo">
+                </div>
+                <div class="navbar-nav-items">
+                    <div class="nav-item">
+                        <div class="dropdown-container">
+                            <i class="fas fa-globe"></i>
+                            <select name="Languages" 
+                            id="languagesSelect" 
+                            class="language-dropdown">
+                            <option value="English" selected>English</option>
+                            <option value="Hindi">Hindi</option>
+                            </select>
+                        </div>
+                    </div> 
+                <div class="nav-item">
+                    <button class="signin-button">Sign In</button>
+                </div>
+                </div> 
+            </nav>
+        </header>
+        <main>
+            <section class="main-container">
+                <div class="main-bg-img-container">
+                    <img 
+                        src="https://assets.nflxext.com/ffe/siteui/vlv3/5ea364b1-8e59-4693-8ad8-f0eaee32d1bf/5b9fdff5-be3d-4fc6-9606-dd1b4002f277/IN-en-20220530-popsignuptwoweeks-perspective_alpha_website_large.jpg" 
+                        alt="Background img" 
+                        class="main-bg-img"
+                    >
+                </div>
+                <div class="main-bg-overlay"></div>
+                <div class="main-card">
+                    <h1 class="main-title">Unlimited movies, TV<br>shows and more.</h1>
+                    <p class="main-subtitle">Watch anywhere. Cancel anytime.</p>
+                    <p class="main-description">Ready to watch? Enter your email to create or restart your membership.</p>
+
+                <div class="email-form-container">
+                    <div class="form-container">
+                        <input type="email" class="email-input" placeholder=" ">
+                        <label class="email-label">Email address</label>            
+                    </div>
+                    <button class="primary-button">
+                        Get Started &nbsp;&nbsp;&nbsp;<i class="fal fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            </section>
+            <section class="features-container">
+            <!-- FEATURE 1 -->
+                <div class="feature">
+                    <div class="feature-details">
+                        <h3 class="feature-title">Enjoy on your TV.</h3>
+                        <h5 class="feature-subtitle">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h5>
+                    </div>
+                    <div class="feature-img-container">
+                        <img 
+                            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" 
+                            alt="tv img" 
+                            class="feature-img"
+                        >
+                        <div class="feature-bg-img-container">
+                            <video controls autoplay="true" loop="true" muted class="feature-bg-img" id = "autoplay">
+                                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" 
+                                alt="netflix shows ad" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- FEATURE 2 -->
+             <div class="feature">
+                <div class="feature-details">
+                    <h3 class="feature-title">Download your shows to watch offline.</h3>
+                    <h5 class="feature-subtitle">Save your favourites easily and always have something to watch.</h5>
+                </div>
+                <div class="feature-img-container">
+                    <img 
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" 
+                        alt="phone screen with stranger things poster" 
+                        class="feature-img"
+                    >
+                
+                <div class="feature2-poster-container">
+                    <div class="poster-container">
+                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" 
+                        alt="stranger things poster"
+                        class="poster">
+                    </div>
+                        <div class="poster-details">
+                            <h4>Stranger Things</h4>
+                            <h6>Downloading...</h6>
+                        </div>
+                        <div class="download-gif">
+                            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" 
+                            alt="download-gif"
+                            class="gif">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- FEATURE 3 -->
+            <div class="feature">
+                <div class="feature-details">
+                    <h3 class="feature-title">Watch everywhere.</h3>
+                    <h5 class="feature-subtitle">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h5>
+                </div>
+                <div class="feature-img-container feature-3-img-container">
+                    <img 
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+                        alt="mac, ipad and phone img" 
+                        class="feature-img feature-3-img"
+                    />
+                    <div class="feature-bg-img-container feature-3-bg-img-container ">
+                        <video autoplay="true" loop="true" muted class="feature-bg-img ">
+                            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" 
+                            alt="netflix shows ad" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+             <!-- FEATURE 4 -->
+             <div class="feature">
+                <div class="feature-details">
+                    <h3 class="feature-title">Create profiles for children.</h3>
+                    <h5 class="feature-subtitle">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h5>
+                </div>
+                <div class="feature-img-container">
+                    <img src="https://occ-0-2686-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf" alt="" class="feature-img">
+                </div>
+            </div>
+            </section>
+
+            <section class="FAQ-list-container">
+                <h1 class="FAQ-heading">Frequently Asked Questions</h1>
+                <div class="FAQ-list">
+                  <div class="FAQ-accordian">
+                    <button class="FAQ-title">
+                      What is Netflix?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ-visible">
+                      <p>
+                        Netflix is a streaming service that offers a wide variety of
+                        award-winning TV shows, movies, anime, documentaries and more –
+                        on thousands of internet-connected devices.
+                      </p>
+                      <p>
+                        You can watch as much as you want, whenever you want, without a
+                        single ad – all for one low monthly price. There's always
+                        something new to discover, and new TV shows and movies are added
+                        every week!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="FAQ-accordian">
+                    <button class="FAQ-title">
+                      How much does netflix cost?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ-visible">
+                      <p>
+                        Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                        streaming device, all for one fixed monthly fee. Plans range
+                        from ₹ 199 to ₹ 799 a month. No extra costs, no contracts.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="FAQ-accordian">
+                    <button class="FAQ-title">
+                      Where can i watch?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ-visible">
+                      <p>
+                        Watch anywhere, anytime, on an unlimited number of devices. Sign
+                        in with your Netflix account to watch instantly on the web at
+                        netflix.com from your personal computer or on any
+                        internet-connected device that offers the Netflix app, including
+                        smart TVs, smartphones, tablets, streaming media players and
+                        game consoles.
+                      </p>
+                      <p>
+                        You can also download your favourite shows with the iOS,
+                        Android, or Windows 10 app. Use downloads to watch while you're
+                        on the go and without an internet connection. Take Netflix with
+                        you anywhere.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="FAQ-accordian">
+                    <button class="FAQ-title">
+                      How do I cancel?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ-visible">
+                      <p>
+                        Netflix is flexible. There are no annoying contracts and no commitments. 
+                        You can easily cancel your account online in two clicks. 
+                        There are no cancellation fees – start or stop your account anytime.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="FAQ-accordian">
+                    <button class="FAQ-title">
+                      What can I watch on Netflix?<i class="fal fa-plus"></i>
+                    </button>
+                    <div class="FAQ-visible">
+                      <p>
+                        Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. 
+                        Watch as much as you want, anytime you want.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="FAQ-get-started-email">
+                  <h3>
+                    Ready to watch? Enter your email to create or restart your
+                    membership.
+                  </h3>
+                  <div class="email-form-container">
+                    <div class="form-container">
+                        <input type="email" class="email-input" placeholder=" ">
+                        <label class="email-label">Email address</label>            
+                    </div>
+                    <button class="primary-button">
+                    Get Started &nbsp;&nbsp;&nbsp;<i class="fal fa-chevron-right"></i></button>
+                </div>
+                </div>
+              </section>
+        </main>
+
+        <footer>
+            <div class="footer-row-1">
+              <h4>Questions? Call 000-800-040-1843</h4>
+            </div>
+            <div class="footer-row-2">
+              <div class="column-1">
+                <p>FAQ</p>
+                <p>Investor Relations</p>
+                <p>Privacy</p>
+                <p>Speed Test</p>
+              </div>
+              <div class="column-2">
+                <p>FAQ</p>
+                <p>Investor Relations</p>
+                <p>Privacy</p>
+                <p>Speed Test</p>
+              </div>
+              <div class="column-3">
+                <p>FAQ</p>
+                <p>Investor Relations</p>
+                <p>Privacy</p>
+                <p>Speed Test</p>
+              </div>
+              <div class="column-4">
+                <p>FAQ</p>
+                <p>Investor Relations</p>
+                <p>Privacy</p>
+                <p>Speed Test</p>
+              </div>
+            </div>
+            <div class="footer-row-3">
+              <div class="dropdown-container">
+                <i class="fas fa-globe"></i>
+                <select
+                  name="languages"
+                  id="languagesSelect"
+                  class="language-dropdown"
+                >
+                  <option value="english" selected>English</option>
+                  <option value="hindi">Hindi</option>
+                </select>
+              </div>
+            </div>
+            <div class="footer-row-4">
+              <p>Netflix India</p>
+            </div>
+          </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
